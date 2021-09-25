@@ -1,0 +1,31 @@
+{
+  "name": "kopitech-token-client",
+  "version": "1.0.0",
+  "description": "Kopitech Token Client Library",
+  "main": "dist/index.js",
+  "files": [
+    "/dist",
+    "/README.md"
+  ],
+  "scripts": {
+    "build": "rm -rf dist/ && cp -r src/ dist/",
+    "test": "mocha \"./{,!(node_modules)/**/}*.test.js\" --require esm",
+    "upload": "npm run build && npm publish"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "kopitech-logger": "^1.0.1"
+  },
+  "keywords": [
+    "kopitech",
+    "token"
+  ],
+  "author": "Yee Hui Poh <yhpoh91@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yhpoh91/kopitech-token-client"
+  }
+}
