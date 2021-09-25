@@ -34,11 +34,11 @@ const token = await tokenClient.getToken();
 
 `TOKEN_EARLY_REFRESH_SECONDS` (STRING: default `client`) - Early token refresh time (in seconds)
 
-`AUTHENTICATION_LOG_ENABLED` (BOOLEAN: default true) - Whether to log
+`TOKEN_LOG_ENABLED` (BOOLEAN: default true) - Whether to log
 
-`AUTHENTICATION_LOG_CONFIG` (BOOLEAN: default false) - Whether to log config upon changes
+`TOKEN_LOG_CONFIG` (BOOLEAN: default false) - Whether to log config upon changes
 
-`LOGGING_ENABLED` (BOOLEAN default: true) - Whether authentication should be enabled
+`LOGGING_ENABLED` (BOOLEAN default: true) - Whether logs should be enabled
 
 `LOGGING_LEVEL` (BOOLEAN default: info) - Log level to be used (debug, info, warn, error)
 
